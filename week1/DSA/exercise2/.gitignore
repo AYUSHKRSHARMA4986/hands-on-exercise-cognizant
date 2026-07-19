@@ -1,0 +1,7 @@
+# IntelliJ project files
+.idea/
+*.iml
+
+# Compiled output directories
+out/
+target/
