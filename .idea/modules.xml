@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/week1/JUnit5 and Mockinto/src/hands-on-exercise.iml" filepath="$PROJECT_DIR$/week1/JUnit5 and Mockinto/src/hands-on-exercise.iml" />
       <module fileurl="file://$PROJECT_DIR$/hands-on-exercise-cognizant.iml" filepath="$PROJECT_DIR$/hands-on-exercise-cognizant.iml" />
     </modules>
   </component>
