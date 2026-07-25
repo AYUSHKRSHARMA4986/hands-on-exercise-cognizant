@@ -1,0 +1,19 @@
+<div class="course-list-container" style="padding: 2rem; max-width: 1200px; margin: 0 auto;">
+  <h2 style="margin-bottom: 20px; color: #0f172a;">Available Courses (NgRx Store)</h2>
+
+  <!-- Loading State Indicator -->
+  <p *ngIf="isLoading$ | async" style="color: #64748b;">Loading courses from NgRx Store...</p>
+
+  <!-- Error Message if API fails -->
+  <p *ngIf="errorMessage$ | async as error" style="color: red; font-weight: bold;">{{ error }}</p>
+
+  <!-- Course Grid -->
+  <div class="course-grid" *ngIf="!(isLoading$ | async)" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+    <app-course-card
+      *ngFor="let c of (courses$ | async)"
+      [course]="c"
+      appHighlight="lightyellow"
+      (enroll)="onEnroll($event)">
+    </app-course-card>
+  </div>
+</div>

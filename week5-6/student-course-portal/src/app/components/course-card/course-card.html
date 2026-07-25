@@ -1,0 +1,11 @@
+<div class="card-content" style="border: 1px solid #cbd5e1; padding: 16px; border-radius: 8px; background: white;">
+  <h3 style="margin-top: 0; color: #1e293b;">{{ course?.name }} ({{ course?.code }})</h3>
+  <p style="color: #475569;">Credits: {{ course?.credits | creditLabel }}</p>
+  <p style="font-weight: bold; text-transform: capitalize; color: #334155;">Status: {{ course?.gradeStatus }}</p>
+
+  <div style="margin-top: 12px;">
+    <button (click)="onEnrollClick()" style="padding: 6px 12px; background: #0284c7; color: white; border: none; border-radius: 4px; cursor: pointer;">
+      Enroll
+    </button>
+  </div>
+</div>

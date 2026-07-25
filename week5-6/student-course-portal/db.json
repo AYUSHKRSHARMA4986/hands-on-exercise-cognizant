@@ -1,0 +1,9 @@
+{
+  "courses": [
+    { "id": 1, "name": "Angular Basics", "code": "CS101", "credits": 3, "gradeStatus": "passed" },
+    { "id": 2, "name": "Java Spring Boot", "code": "CS102", "credits": 4, "gradeStatus": "failed" },
+    { "id": 3, "name": "Database Design", "code": "CS103", "credits": 3, "gradeStatus": "pending" }
+  ],
+  "students": [],
+  "enrollments": []
+}

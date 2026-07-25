@@ -1,0 +1,29 @@
+<div style="padding: 2rem; max-width: 500px; border: 1px solid #ccc; border-radius: 8px; margin: 2rem;">
+  <h2>Reactive Enrollment Form</h2>
+  <form [formGroup]="enrollForm" (ngSubmit)="onSubmit()">
+
+    <div style="margin-bottom: 15px;">
+      <label>Name:</label>
+      <input type="text" formControlName="studentName" style="width: 100%; padding: 8px;">
+      <small *ngIf="f['studentName'].invalid && f['studentName'].touched" style="color: red;">Valid name required.</small>
+    </div>
+
+    <div style="margin-bottom: 15px;">
+      <label>Email:</label>
+      <input type="email" formControlName="studentEmail" style="width: 100%; padding: 8px;">
+      <small *ngIf="f['studentEmail'].invalid && f['studentEmail'].touched" style="color: red;">Valid email required.</small>
+    </div>
+
+    <div style="margin-bottom: 15px;">
+      <label>Course ID:</label>
+      <input type="number" formControlName="courseId" style="width: 100%; padding: 8px;">
+    </div>
+
+    <div style="margin-bottom: 20px;">
+      <input type="checkbox" formControlName="agreeToTerms">
+      <label style="margin-left: 8px;">I agree to terms</label>
+    </div>
+
+    <button type="submit" [disabled]="enrollForm.invalid" style="padding: 10px 20px; background-color: #0284c7; color: white; border: none;">Submit</button>
+  </form>
+</div>
